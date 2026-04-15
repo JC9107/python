@@ -8,6 +8,17 @@ ventas=[
 ]
 
 # 2. Calculo de Ingresos Totales:
+# Considere ingresos totales como uno solo, ya que al llamarse mi lista "ventas" y pedirme los ingresos totales de ventas, en caso fuera cada venta, se operaria de forma similar a esta:
+"""
+for dic in ventas:
+    precio = float(dic["precio"])
+    cantidad = float(dic["cantidad"])
+
+    dic["Ingreso Total"] = precio*cantidad
+
+print(ventas)
+"""
+
 resultado=0
 for dic in ventas:
     resultado = resultado + float(dic["cantidad"]) * float(dic["precio"])
